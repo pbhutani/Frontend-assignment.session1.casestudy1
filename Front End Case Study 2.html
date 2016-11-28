@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+</div><!--.col -->
+<div class="col-md-8">
+<h3>
+<span style ="color: green;">Writing text in < div > </span> <span style ="color: red;">using forms, </span> <span style ="color: green;">JavaScript and jQuery </span>
+</h3>
+How to write to a HTML page without reloading and without using server side scripting.
+<!-- NOTE: TB3 form width default is 100%, so they expan to your <div> -->
+<form name="frmComment" id="frmComment">
+<label for="txtComment">Enter a comment here:</label>
+<input type="text" name="commentUser" id="txtComment" class="form-control" placeholder="Enter a comment ">
+<br>
+<button type="button" class="btn btn-warning" value="Submit" onclick="writeComment()">Write out text</button>
+<label><input type="checkbox" id="chkLorem" onclick="writeLorem()"> Use Lorem Ipsum text</label>
+</form>
+<hr>
+<p>
+Write to "textarea"
+</p>
+<textarea id="txtCommentHere" class="form-control" rows="3">
+</textarea>
+<p>
+Write to <div>
+</p>
+<div id="comment"></div>
+<hr>
+<!--Mr.M. logo -->
+<p>
+</p>
+<p>
+<a href="http://validator.w3.org/check?uri=referer;ss=1"><small>HTML</small><sup>5</sup></a>
+</p>
+<hr>
+</div><!--.col -->
+</div><!--./row -->
+</div><!--./container -->
+
+<style>
+.row {
+	background-image: url(https://custom.cvent.com/AB59676B93B74DF599B64F5CF87DCAB3/pix/e244379693274998b0ba4719b3effab4.png);
+}
+
+.btn-warning {
+	background-color: #ef9009;
+	border-color: #ef9009;  
+}
+</style>
+
+</body>
+</html>
